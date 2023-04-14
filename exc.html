@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthyLifeHack/exc</title>
+    <style>
+        body{
+            box-sizing: content-box;
+            background-color: #dfaa8b20;
+            padding: 0px  ;
+        }
+
+        li{
+        list-style: none;
+     }
+     a{
+        text-decoration: none;
+        color: rgba(11, 97, 53);
+        font-size:medium;
+     }
+     a:hover{
+        color: white;
+     }
+     /* header */
+    
+     .nav{
+        background-color:rgba(0, 0, 0, 0.267);
+        position: relative;
+        padding: 0.5rem 2rem;
+     }
+     .navbar{
+        width: 100%;
+        height: 60px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        
+     }
+    .navbar .logo a {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .navbar .logo a img{
+      height:35px; 
+      border-radius: 50%; 
+      display:block;
+      margin:auto;
+
+    }
+    .navbar .links {
+        display: flex;
+        gap: 2rem;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #dfaa8b;
+        
+    }
+    
+    /*   ------------------------------------------------------------------------------------------ */
+
+        .container{
+            padding: 0px 20px;
+        }
+
+    /*                   ------------------form------------------------                      */
+
+    form{
+    max-width: 500px;
+	padding: 10px 20px;
+	background: #f4f7f8;
+	margin: 30px auto;
+	padding: 20px;
+	background: #f4f7f8;
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+        
+    }
+    #form label{
+	display: inline-block;
+	margin-bottom: 8px;
+    color: #b5886d;
+  
+    }
+
+  
+
+#form input[type="text"],
+#form input[type="number"]{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgba(11, 97, 53);
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:rgba(18, 86, 51, 0.515);
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+#form input[type="text"]:focus,
+#form input[type="number"]:focus{
+    background: #d2d9dd;
+}
+
+#form input[type="button"]
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: rgba(11, 97, 53,0.85);
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid rgb(7, 82, 43);
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+
+#form input[type="button"]:hover
+{
+	background: rgba(11, 97, 53);
+}
+
+#skip {
+    text-align: center;
+}
+#skip h2{
+    font-weight: 10;
+}
+#skip button {
+    position: relative;
+	display: block;
+	padding: 10px 20px 10px 20px;
+	color: #FFF;
+	margin: 0 auto;
+	background: rgba(11, 97, 53,0.85);
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 10%;
+	border: 1px solid rgb(7, 82, 43);
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+
+}
+#skip button:hover{
+    background: rgba(11, 97, 53);
+}
+
+    /* ------------------------------------------------------------------------------------- */
+       #mainContainer{
+        display:none;
+       }
+        #mainDiv{
+
+            display: grid;
+            grid-auto-flow: row;
+            grid-gap: 20px;
+            grid-template-columns: 60% 40%;
+            grid-template-rows: auto;
+            padding: 5%;
+          
+        }
+        #mainDiv img{
+            
+            vertical-align: middle;
+            justify-content: center;
+            width: 60%;
+            border: 10px  solid #b5896dc6;
+            border-radius: 60% 0% 60% 0%;
+        }
+        #mainDiv p span{
+            color:rgb(7, 82, 43) ;
+            text-transform: uppercase;
+            font-size: xx-large;
+            font-weight: 200;
+            text-decoration:underline overline;
+            
+            
+        }
+
+        #mainDiv p {
+            font-size: larger;
+            color: rgba(11, 97, 53);
+            text-align: justify;
+           
+        }
+        #mainDiv p .set{
+            color: rgba(43, 38, 38, 0.556);
+            font-size: x-large;
+            text-decoration: none;
+            text-transform: none;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    
+        <header id="myHeader">
+            <div class="nav" >
+             <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png"  alt="logo">HealthyLifeHack</a></div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact_us.html">contact_us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>  
+             </div>
+           </div>
+              
+        </header>
+   <div class="container">   
+
+    <div id="form">
+    
+    
+    <form action="action_page.php" method="post" autocomplete="off" name="form1"id="form">
+
+       
+        <label>Name</label>
+        <input type="text" name="name"value=""/>
+        <br>
+       
+        <label>AGE:</label>
+        <input type="number"name="age" value="number">
+        <br>
+        <label for="radio">SEX:</label>
+        <label for="male">Male</label>  <input type="radio" name="sex" value="male" id="male" checked>
+        <label for="female">Female</label> <input type="radio" name="sex" value="female" id="female"/>
+        <br>
+        <br>
+        <input type="button" value="submit"  id="form1">
+
+    </form>  
+    <div id ="skip">
+        <h2>Cleak on continue button for going Excersise page as a guest..</h1>
+        <button value="continue" id="form2">continue</button>
+
+    </div>
+
+    </div>
+
+    <div id="mainContainer">
+    <div  id="mainDiv">
+        
+        <img src="img/E1 donkey kiks.gif" alt="donkey kiks">
+        <p><span>Donkey kicks</span>
+            <br>
+            Donkey kicks are great for both stability and toning, Ray says. They target your gluteus maximus—the largest of your three glutes muscles, and the bulk of your booty. They also work your core and shoulder muscles, since your entire body has to remain stable while your leg lifts.
+            <br>
+            <br>
+            <span class="set">12 reps X 2 sets</span>
+        </p>
+        
+        <img src="img/e3 standing montain climbers.gif" alt="standing montain climbers">
+        <p><span>standing montain climbers</span>
+            <br>
+            The standing mountain climber is a great full body exercise that enhances aerobic fitness, burns off fat, and strengthens the body. This exercise also helps to improve your flexibility, coordination, and balance.
+            <br>
+            <br>
+            <span class="set">20 reps X 2 sets</span>
+        </p>
+        
+        <img src="img/e4 wood chop.gif" alt="wood chop">
+        <p><span>wood chop</span>
+            <br>
+            This exercise keeps your trunk activated in a rotational movement pattern, as well as multiple abdominal and back muscles for stability. In addition, your legs and arms provide stability and mobility.
+            <br>
+            <br>
+            <span class="set">14 reps X 2 sets</span>
+        </p>
+        
+        <img src="img/e5 standing side crunch.gif" alt="standing side crunch">
+        <p><span>standing side crunch</span>
+            <br>
+            Adding standing side crunches to your workout routine helps to target the oblique muscles and tightens the entire side ab wall more effectively. It also improves your balance, increases strength and stability, and burns more calories than side crunches done on a mat.
+            <br>
+            <br>
+            <span class="set">16 reps X 2 sets</span>
+        </p> 
+        
+        <img src="img/e6 jumping lunges.gif" alt="jumping lunges">
+        <p><span>jumping lunges</span>
+            <br>
+            Jumping lunges are a fantastic lower body exercise that increases the intensity and difficulty of the basic lunge by adding a jump. The addition of a plyometric jump not only challenges the quads, hamstrings, glutes, hip flexors, and calves, but it also recruits your cardiovascular system.
+            <br>
+            <br>
+            <span class="set">16 reps X 2 sets</span>
+        </p>
+       
+        <img src="img/e7 step up with knee raise.gif" alt="step up with knee raise">
+        <p><span>step up with knee raise</span>
+            <br>
+            The step up with knee raise is a great cardio move that tones and sculpts your thighs and glutes. Cardio training will not only help you lose weight, but it can also increase your heart and lung capacity. This move also improves your circulation, raises your energy levels, and boosts your metabolism.
+            <br>
+            <br>
+            <span class="set">14 reps X 2 sets</span>
+        </p>
+        
+        <img src="img/e8 sumo side bends.gif" alt="sumo side bends">
+        <p><span>sumo side bends</span>
+            <br>
+            The sumo side bends targets your glutes, inner thighs, and obliques. This exercise tightens the entire side ab wall, strengthens your lower body, and improves your posture and flexibility.
+            <br>
+            <br>
+            <span class="set">16 reps X 2 sets</span>
+        </p>
+        
+        <img src="img/e9 roll over.gif" alt="roll over">
+        <p><span>roll over</span>
+            <br>
+            The roll over is a pilates exercise that strengthens the abdominal muscles and stretches the back and the hamstrings. This pilates move helps improve your coordination and balance, favoring spinal articulation and abdominal control.
+            <br>
+            <br>
+            <span class="set">14 reps X 2 sets</span>
+        </p>
+        
+        <img src="img/e10 superman pose.gif" alt="superman pose">
+        <p><span>superman pose</span>
+            <br>
+            The superman exercise strengthens the erector spinae muscles and other surrounding muscles to support your spine, promote good posture, and reduce risk of injury. What's more, it uses no equipment and is easy to do.
+            <br>
+            <br>
+            <span class="set">18 reps X 2 sets</span>
+        </p>  
+       
+        
+    </div>
+    </div>
+</div>
+
+
+
+
+<!-- ----------------------------------SCRIPT---------------------------------------- -->
+
+
+<script>
+    window.onscroll = function() {myFunction()};
+    document.getElementById("form1").onclick = function() {form1()};
+    document.getElementById("form2").onclick = function() {form1()};
+    
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+function form1(){
+    document.getElementById("form").style.display = "none";
+    document.getElementById("mainContainer").style.display = "block";
+}
+
+ 
+
+
+
+</script>
+</body>
+</html>

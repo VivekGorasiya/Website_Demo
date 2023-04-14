@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      /* Custom styles */
+      body {
+        background-color: #dfaa8b65;
+        font-family: Arial, sans-serif;
+      }
+      
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background-color:rgba(11, 97, 53,0.3) ;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      }
+      
+      h1 {
+        color: rgba(11, 97, 53);
+        font-size: 36px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .form-group {
+        margin: 10px;
+        width: 100%;
+        max-width: 400px;
+        position: relative;
+      }
+      
+      label {
+        color: rgba(11, 97, 53);
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+      }
+      
+      input, textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #f5f5f5;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      
+      textarea {
+        height: 150px;
+        resize: none;
+      }
+      
+      input:focus, textarea:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        background-color: #f0f0f0;
+      }
+      
+      button[type=submit] {
+        background-color: rgba(11, 97, 53);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+      
+      button[type=submit]:hover {
+        background-color: rgba(11, 97, 53, 0.8);
+        transform: translateY(-3px);
+      }
+      
+      .form-group + .form-group::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background-color: rgba(0,0,0,0.1);
+        top: 0;
+        right: -10px;
+      }
+      
+      @media screen and (max-width: 600px) {
+        form {
+          flex-direction: column;
+        }
+        
+        .form-group {
+          max-width: 100%;
+        }
+        
+        .form-group + .form-group::before {
+          display: none;
+        }
+      }
+      
+      .contact-info {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+  
+  .contact-info-item {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .contact-info-item i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: rgba(11, 97, 53);
+  }
+  
+  .contact-info-item p {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: rgba(11, 97, 53);
+  }
+  
+
+</style>
+<script>
+  function validateForm() {
+    var name = document.forms["contactForm"]["name"].value;
+    var email = document.forms["contactForm"]["email"].value;
+    var message = document.forms["contactForm"]["message"].value;
+    
+    if (name == "" || email == "" || message == "") {
+      alert("Please fill out all fields.");
+      return false;
+    }
+  }
+  </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Have a question or comment? Fill out the form below and we'll get back to you as soon as possible.</p>
+      <form name="contactForm" onsubmit="return validateForm()">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address">
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+        </div>
+        
+        <div class="form-group"><button type="submit">Submit</button></div>
+      </form>
+      
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <i class="fa fa-map-marker"></i>
+          <p>123 Main Street<br>Anytown, USA 12345</p>
+        </div>
+        
+        <div class="contact-info-item">
+          <i class="fa fa-phone"></i>
+          <p>(555) 555-1234</p>
+        </div>
+        
+        <div class="contact-info-item">
+          <i class="fa fa-envelope"></i>
+          <p>info@mywebsite.com</p>
+        </div>
+      </div>
+    </div>
+    
+</body>
+</html>    

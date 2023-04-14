@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-BKbHJOF63rNn+R1gJhKPHsyPlPv7K4tWg1tRwMI+laBJJv7SxIWzE9X2q3yqikmgK0JLOOo+LebZw78ucD+z1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-s72L4GG7N4K4szcM7InuZI+hNSf7vahksJSjTylQX3qDgFlvgBMfxx+CDHCVop2h3GjOJGOlLrDlv95h/cRWEw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<title>Diet Plan - Meal Plan</title>
+	<style>
+		body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #dfaa8b65;
+}
+h1 {
+  text-align: center;
+  font-size: 48px;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  max-width: 500px;
+  width: 100%;
+}
+
+.card h2 {
+  color: rgba(11, 97, 23, 1);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: rgba(11, 97, 23, 1);
+}
+
+th {
+  background-color: #dfaa8b65;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgba(11, 97, 23, 1);
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+a:hover {
+  background-color: #7bb57b;
+}
+
+/* Media queries for larger screens */
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 50px;
+  }
+
+  .card {
+    max-width: 800px;
+    margin: 50px;
+  }
+}
+
+
+	</style>
+</head>
+
+<body>
+	<div style="background-color:rgba(11, 97, 23)  ; padding: 20px;color: #fff;"><h1>Diet Plan - Meal Plan</h1></div>
+	<div class="container">
+		<div class="card">
+			<h2>Monday</h2>
+			
+			<table>
+				<thead>
+					<tr>
+                        <th></th>
+						<th>Food Item</th>
+						<th>Calories</th>
+						<th>Protein</th>
+						<th>Carbs</th>
+						<th>Fat</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+                        <td>Breakfast:</td>
+						<td>Oatmeal with berries and almonds</td>
+						<td>300</td>
+						<td>10g</td>
+						<td>40g</td>
+						<td>10g</td>
+					</tr>
+					<tr>
+						<td>Snack:</td>
+						<td>Apple</td>
+						<td>80</td>
+						<td>1g</td>
+						<td>0g</td>
+						<td>0g</td>
+					</tr>
+					<tr>
+						<td>Lunch:</td>
+						<td>Turkey sandwich with avocado and vegetables</td>
+						<td>400</td>
+						<td>25g</td>
+						<td>40g</td>
+						<td>15g</td>
+					</tr>
+                    <tr>
+                        <td>Snack:</td>
+                        <td>Yogurt with granola</td>
+                        <td>200</td>
+                        <td>10g</td>
+                        <td>30g</td>
+                        <td>5g</td>
+                    </tr>
+                    <tr>
+                        <td>Dinner:</td>
+                        <td>Grilled salmon with roasted vegetables</td>
+                        <td>500</td>
+                        <td>30g</td>
+                        <td>20g</td>
+                        <td>30g</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="#">Get Monday's Meal Plan</a>
+        </div>
+    
+        <div class="card">
+            <h2>Tuesday</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Food Item</th>
+                        <th>Calories</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                        <th>Fat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Breakfast:</td>
+                        <td>Scrambled eggs with spinach and whole grain toast</td>
+                        <td>350</td>
+                        <td>20g</td>
+                        <td>30g</td>
+                        <td>15g</td>
+                    </tr>
+                    <tr>
+                        <td>Snack:</td>
+                        <td>Greek yogurt with honey and berries</td>
+                        <td>150</td>
+                        <td>20g</td>
+                        <td>15g</td>
+                        <td>0g</td>
+                    </tr>
+                    <tr>
+                        <td>Lunch:</td>
+                        <td>Grilled chicken with brown rice and vegetables</td>
+                        <td>450</td>
+                        <td>30g</td>
+                        <td>40g</td>
+                        <td>20g</td>
+                    </tr>
+                    <tr>
+                        <td>Snack:</td>
+                        <td>Protein shake with almond milk and banana</td>
+                        <td>250</td>
+                        <td>25g</td>
+                        <td>30g</td>
+                        <td>5g</td>
+                    </tr>
+                    <tr>
+                        <td>Dinner:</td>
+                        <td>Vegetable stir-fry with tofu and brown rice</td>
+                        <td>400</td>
+                        <td>15g</td>
+                        <td>50g</td>
+                        <td>15g</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="#">Get Tuesday's Meal Plan</a>
+        </div>
+    
+        <div class="card">
+            <h2>Wednesday</h2>
+            
+            <table>
+                <thead>
+                    <tr><th></th>
+                        <th>Food Item</th>
+                        <th>Calories</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                        <th>Fat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> <td>Breakfast:</td>
+                        <td>Green smoothie with kale, spinach, banana, and almond milk</td>
+                        <td>200</td>
+                        <td>5g</td>
+                        <td>30g</td>
+                        <td>5g</td>
+                    </tr>
+					<tr>
+						<td>Snack:</td>
+						<td>Apple slices with peanut butter</td>
+						<td>150</td>
+						<td>5g</td>
+						<td>20g</td>
+						<td>10g</td>
+					</tr>
+					<tr>
+						<td>Lunch:</td>
+						<td>Turkey sandwich on whole grain bread with avocado and vegetables</td>
+						<td>400</td>
+						<td>25g</td>
+						<td>40g</td>
+						<td>15g</td>
+					</tr>
+					<tr>
+						<td>Snack:</td>
+						<td>Cottage cheese with pineapple</td>
+						<td>200</td>
+						<td>15g</td>
+						<td>20g</td>
+						<td>5g</td>
+					</tr>
+					<tr>
+						<td>Dinner:</td>
+						<td>Spaghetti squash with turkey meatballs and marinara sauce</td>
+						<td>500</td>
+						<td>30g</td>
+						<td>50g</td>
+						<td>20g</td>
+					</tr>
+				</tbody>
+			</table>
+			<a href="#">Get Wednesday's Meal Plan</a>
+		</div>
+        <div class="card">
+            <h2>Thursday</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                       <th></th>
+                        <th>Food Item</th>
+                        <th>Calories</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                        <th>Fat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Breakfast:</td>
+                        <td>Avocado toast with tomato and feta cheese</td>
+                        <td>300</td>
+                        <td>10g</td>
+                        <td>30g</td>
+                        <td>20g</td>
+                    </tr>
+                    <tr>
+                        <td>Snack:</td>
+                        <td>Hard boiled egg and baby carrots</td>
+                        <td>150</td>
+                        <td>10g</td>
+                        <td>10g</td>
+                        <td>5g</td>
+                    </tr>
+                    <tr>
+                        <td>Lunch:</td>
+                        <td>Tuna salad with mixed greens and whole grain crackers</td>
+                        <td>350</td>
+                        <td>20g</td>
+                        <td>30g</td>
+                        <td>15g</td>
+                    </tr>
+                    <tr>
+                        <td>Snack:</td>
+                        <td>Protein bar</td>
+                        <td>200</td>
+                        <td>20g</td>
+                        <td>25g</td>
+                        <td>10g</td>
+                    </tr>
+                    <tr>
+                        <td>Dinner:</td>
+                        <td>Grilled chicken with sweet potato and green beans</td>
+                        <td>450</td>
+                        <td>30g</td>
+                        <td>40g</td>
+                        <td>20g</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="#">Get Thursday's Meal Plan</a>
+        </div>
+    
+        <div class="card">
+            <h2>Friday</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Food Item</th>
+                        <th>Calories</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                        <th>Fat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Breakfast:</td>
+                        <td>Oatmeal with banana and almonds</td>
+                        <td>350</td>
+                        <td>10g</td>
+                        <td>50g</td>
+                        <td>10g</td>
+                    </tr>
+                    <tr>
+                        <td>Snack:</td>
+                        <td>Greek yogurt with berries and honey</td>
+                        <td>200</td>
+                        <td>15g</td>
+                        <td>25g</td>
+                        <td>5g</td>
+                    </tr>
+                    <tr>
+                        <td>Lunch:</td>
+                        <td>Vegetarian wrap with hummus and vegetables</td>
+                        <td>300</td>
+                        <td>10g</td>
+                        <td>40g</td>
+                        <td>10g</td>
+                    </tr>
+                    <tr>
+                        <td>Snack:</td>
+                        <td>Apple with almond butter</td>
+                        <td>150</td>
+                        <td>5g</td>
+                        <td>20g</td>
+                        <td>10g</td>
+                    </tr>
+                    <tr>
+                        <td>Dinner:</td>
+                        <td>Salmon with quinoa and roasted vegetables</td>
+                        <td>500</td>
+                        <td>30g</td>
+                        <td>40g</td>
+                        <td>20g</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="#">Get Friday's Meal Plan</a>
+        </div>
+
+        <div class="card">
+            <h2>Saturday</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Food Item</th>
+                        <th>Calories</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                        <th>Fat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Breakfast:</td>
+                        <td>Green smoothie with kale, spinach, banana, and almond milk</td>
+                        <td>200</td>
+                        <td>5g</td>
+                        <td>30g</td>
+                        <td>5g</td>
+                    </tr>
+                    <tr>
+                        <td>Snack:</td>
+						<td>Apple</td>
+						<td>80</td>
+						<td>1g</td>
+						<td>0g</td>
+						<td>0g</td>
+                    </tr>
+                    <tr>
+                        <td>Lunch:</td>
+                        <td>Vegetarian wrap with hummus and vegetables</td>
+                        <td>300</td>
+                        <td>10g</td>
+                        <td>40g</td>
+                        <td>10g</td>
+                    </tr>
+                    <tr>
+                        <td>Snack:</td>
+                        <td>Protein bar</td>
+                        <td>200</td>
+                        <td>20g</td>
+                        <td>25g</td>
+                        <td>10g</td>
+                    </tr>
+                    <tr>
+                        <td>Dinner:</td>
+						<td>Spaghetti squash with turkey meatballs and marinara sauce</td>
+						<td>500</td>
+						<td>30g</td>
+						<td>50g</td>
+						<td>20g</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="#">Get Saturday's Meal Plan</a>
+        </div>
+    </div>
+</body>
+</html>
+    
+    
